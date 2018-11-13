@@ -10,3 +10,6 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 
 JKM's first message in document
+
+
+Hello. Adding some fun words.
