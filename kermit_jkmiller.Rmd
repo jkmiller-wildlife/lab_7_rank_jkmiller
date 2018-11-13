@@ -1,0 +1,12 @@
+---
+title: "Kermit Perceptions Rank-based Tests"
+author: "Jamie K. Miller"
+date: "November 13, 2018"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+JKM's first message in document
