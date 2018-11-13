@@ -19,10 +19,37 @@ JKM: yay more fun words! yada yada yada. so professional.
 
 ```{r}
 library("tidyverse")
-kermit<-read_csv("kermit.csv")
+kermit <- read_csv("kermit.csv")
 
 kermit_hist <-ggplot(kermit, aes(x= Score.pre)) +
-  geom_histogram(bins =4)+
+  geom_histogram(bins = 4)+
   facet_wrap(~Gender)
+kermit_hist
+
 ```
+Creator: Perform rank-based comparisons using MNann-Whitney U and Wilcoxon-Signed Rank
+
+Question: Is ther a significant difference in pre-talk ranks of Kermit for Male and Female respondents?
+
+```{r}
+
+mwu_kermit <- kermit %>%
+  wilcox.test(Score.pre ~ Gender, data = .)
+
+# H0: There is NO significant difference in ranks for male and female respondents
+# HA: There is a significant difference in ranks for male and female respondents
+
+mwu_kermit
+```
+
+"There was no significant difference in ranks for male and female respondents (W = 155.5, p = 0.45, alpha = 0.05)."
+
+
+
+
+
+
+
+
+
 
