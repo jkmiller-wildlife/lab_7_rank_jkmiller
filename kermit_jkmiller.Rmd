@@ -46,6 +46,15 @@ mwu_kermit
 
 
 
+Is there a signif  change in Kermit rankings before and after his Bren talk? Ack one-to-one relationship between the values.
+
+```{r}
+wsr_kermit <-wilcox.test(kermit$Score.pre, kermit$Score.post, paired = TRUE)
+
+wsr_kermit
+```
+
+There is no significant difference. 
 
 
 
