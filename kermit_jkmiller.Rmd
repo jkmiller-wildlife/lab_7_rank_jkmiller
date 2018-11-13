@@ -16,3 +16,13 @@ Hello. Adding some fun words.
 
 
 JKM: yay more fun words! yada yada yada. so professional.
+
+```{r}
+library("tidyverse")
+kermit<-read_csv("kermit.csv")
+
+kermit_hist <-ggplot(kermit, aes(x= Score.pre)) +
+  geom_histogram(bins =4)+
+  facet_wrap(~Gender)
+```
+
