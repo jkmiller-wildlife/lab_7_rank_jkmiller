@@ -56,6 +56,8 @@ wsr_kermit
 
 There is no significant difference. 
 
+paired test results above. 
+
 
 
 
